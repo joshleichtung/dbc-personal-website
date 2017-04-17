@@ -1,0 +1,157 @@
+header {
+  background-image: url("images/header.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  /* background-position: 0% 90%; */
+  margin: 0;
+  height: 500px;
+  padding: 0 0 0 40px;
+}
+
+header h1 {
+  color: #fef8df;
+  text-shadow: 4px 7px 2px #1f82e0, 0 0 7px black;
+  margin: 0;
+  font-family: 'Bungee', cursive;
+  font-size: 75px;
+  position: fixed;
+  top: 10px;
+  width:320px;
+}
+
+header div {
+   display: table-cell;
+   margin: 0 auto;
+   vertical-align: bottom;
+   width: 320px;
+   height: 500px;
+ }
+
+ main {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 1.2rem;
+   /* padding: 0 15px 1em; */
+   padding: 0;
+   width: 600px;
+   margin: 0 0 0 400px;
+   border-left: 1px #ddd solid;
+ }
+
+ section {
+  margin: 0;
+  border: 0;
+  padding: 0;
+ }
+
+ body {
+   margin: 0;
+   background-color: #fef8df;
+   /* background-color: rgba(31,130,224, .6) */
+ }
+
+ * {
+   box-sizing: border-box;
+}
+
+main h2 {
+  font-size: 2.5em;
+  margin: .25em 0;
+}
+
+main > section {
+  padding: 20px;
+}
+section#facts ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+div#clear-left {
+  width: 320px;
+  margin: 0 0 0 40px;
+  height: 100%;
+  border: 4px green solid;
+  position: relative;
+}
+
+section#origin {
+  margin: 0;
+}
+
+section#origin img {
+  width: 560px;
+}
+
+section#origin figure {
+  margin: 0 auto;
+  padding: 0;
+  width: 580px;
+  display: block;
+}
+
+div#overlay figure {
+  z-index: -9999;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(31, 130, 224, .7);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  text-align: center;
+  vertical-align: center;
+}
+
+div#overlay figure figcaption {
+   background-color: #fef8df;
+}
+
+div#overlay figure:target {
+  opacity: 1;
+  animation-timing-function: ease-out;
+  z-index: 9999;
+}
+
+div#overlay figure img {
+  height: 80%;
+}
+
+section#tricks {
+
+}
+
+section#tricks table {
+  width: 100%;
+  border: 1px #ddd solid;
+  border-collapse: collapse;
+}
+
+section#tricks table th {
+  text-shadow: 1px 1px 1px #ddd;
+  color: #1f82e0;
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+section#tricks  table td, section#tricks table th {
+  margin: 0;
+  padding: 6px;
+}
+
+section#tricks table td {
+  border-top: 1px #ddd solid;
+}
+
+body a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body a:visited {
+  color: #9059c6;
+}
